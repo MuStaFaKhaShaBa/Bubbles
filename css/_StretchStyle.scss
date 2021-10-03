@@ -1,0 +1,105 @@
+$Color-header: #f6f6f6;
+$Main-Color-view: #10cab7;
+$Color-Footer: #2c4755;
+$border-bgC: #ddd;
+$Special-heading:#ebeced;
+$Font-Color: #797979;
+$Font-family: "Work Sans", sans-serif;
+
+
+$Main-transition: 0.5s;
+$main-padding: 60px;
+$bgC: #f6f6f6;
+
+body {
+  font-family: $Font-family;
+}
+
+i {
+  color: $Main-Color-view;
+}
+
+.container {
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.special-heading{
+  font-size: 100px;
+  font-weight: 800;
+  color:$Special-heading ;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -3px;
+}
+.special-heading + p{
+  text-align: center;
+  font-size: 20px;
+  margin: -30px 0 0;
+  color: $Font-Color;
+}
+
+@media (max-width: 768px) {
+  .special-heading{
+    font-size: 60px;
+  }
+  .special-heading + p{
+    margin: -20px 0 0;
+    font-size: 15px;
+  }
+}
+
+// container
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+//  Container
+
+@mixin arrow($size, $direc, $color, $top, $right) {
+  content: "";
+  border: $size solid;
+  @if $direc == top {
+    border-color: transparent transparent $color;
+  } @else if $direc == left {
+    border-color: transparent $color transparent transparent;
+  } @else if $direc == right {
+    border-color: transparent transparent transparent $color;
+  } @else {
+    border-color: $color transparent transparent;
+  }
+
+  position: absolute;
+  right: $right;
+  top: $top;
+}
+
+@mixin postio($tp:0px, $rit:0px, $mrgn:0px, $padn:0px) {
+  position: absolute;
+  top: $tp;
+  right: $rit;
+  margin: $mrgn;
+  padding: $padn;
+  
+}
+
+@mixin Fl-Ex($Just-content:flex-start,$align-itm:flex-start,$wrap:nowrap,$dir:row) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $Just-content;
+  align-items: $align-itm;
+  flex-wrap: $wrap;
+}
