@@ -40,18 +40,21 @@ i {
 @media (min-width: 768px) {
   .container {
     width: 750px;
+    height: 100%;
   }
 }
 
 @media (min-width: 992px) {
   .container {
     width: 970px;
+    height: 100%;
   }
 }
 
 @media (min-width: 1200px) {
   .container {
     width: 1170px;
+    height: 100%;
   }
 }
 
@@ -149,12 +152,6 @@ i {
           align-items: flex-start;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-}
-
-@media (max-width: 440px) {
-  .parent .container .icon i {
-    color: #cceeff;
-  }
 }
 
 .parent .container .icon .social {
@@ -305,13 +302,13 @@ Button {
   padding: 10px 20px;
   border-radius: 20px;
   color: #cceeff;
-  -webkit-transition: opacity .3s;
-  transition: opacity .3s;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
 }
 
 Button:hover {
   cursor: pointer;
-  opacity: .4;
+  opacity: 0.4;
 }
 
 section > i {
@@ -329,8 +326,9 @@ section > i {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  opacity: .5;
+  opacity: 0.5;
   cursor: pointer;
   margin: 0 5px;
+  color: #cceeff;
 }
 /*# sourceMappingURL=style.css.map */
