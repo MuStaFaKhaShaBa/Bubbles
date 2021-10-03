@@ -152,8 +152,8 @@ i {
 }
 
 @media (max-width: 440px) {
-  .parent .container .icon {
-    opacity: .9;
+  .parent .container .icon i {
+    color: #cceeff;
   }
 }
 

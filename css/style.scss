@@ -71,7 +71,9 @@ $Main-Color-view:#cceeff;
             @include Fl-Ex(space-between);
 
             @media (max-width:440px) {
-                opacity: .9;
+                i{
+                    color: $Main-Color-view;
+                }
             }
 
             .social {
