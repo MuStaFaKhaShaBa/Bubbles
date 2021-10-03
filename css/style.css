@@ -151,6 +151,12 @@ i {
       flex-wrap: nowrap;
 }
 
+@media (max-width: 440px) {
+  .parent .container .icon {
+    opacity: .9;
+  }
+}
+
 .parent .container .icon .social {
   width: 50%;
   display: -webkit-box;
