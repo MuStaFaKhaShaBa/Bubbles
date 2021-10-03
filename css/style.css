@@ -3,12 +3,38 @@ body {
 }
 
 i {
-  color: #ebeced;
+  color: #10cab7;
 }
 
 .container {
   padding: 30px;
   margin: 0 auto;
+}
+
+.special-heading {
+  font-size: 100px;
+  font-weight: 800;
+  color: #ebeced;
+  text-align: center;
+  margin: 0;
+  letter-spacing: -3px;
+}
+
+.special-heading + p {
+  text-align: center;
+  font-size: 20px;
+  margin: -30px 0 0;
+  color: #797979;
+}
+
+@media (max-width: 768px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin: -20px 0 0;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 768px) {
@@ -80,7 +106,7 @@ i {
 
 @media (max-width: 565px) {
   .parent .container .wellcome h1 {
-    font-size: 45px;
+    font-size: 55px;
   }
 }
 
@@ -218,7 +244,7 @@ i {
           animation-delay: 2.5s;
 }
 
-.parent .container .bubbles img:nth-child() {
+.parent .container .bubbles img:nth-child(3) {
   -webkit-animation-delay: 1.5s;
           animation-delay: 1.5s;
 }
